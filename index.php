@@ -1,0 +1,130 @@
+<?php
+    $ok = 1;
+    
+?>
+<html>
+    <head>
+        <title>CFDISC</title>
+        <script src = "js/general.js"></script>
+        <style>
+body{
+    margin:0;
+    font-family:Arial;
+}
+.fc{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    background:#112;
+    box-sizing:border-box;
+}
+.loader{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#001;
+    transition:all 0.3s linear;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.flex, .flexr{display:flex;}
+.flexc {display:flex; flex-direction:column;}
+.flexy{flex:1;}
+.fvw{width:100vw;}
+.fvh{height:100vh;}
+.oh{overflow:hidden;}
+.ct{
+    background:rgba(0,0,0,0.3); 
+    margin-top:5px; 
+    height:7vh;
+    white-space:nowrap; 
+    text-overflow:ellipsis; 
+    line-height:7vh; 
+    color:rgba(255,255, 255, 0.6);
+    /*transition:all 0.1s linear; */
+    border-top-right-radius:3.5vh;
+    border-bottom-right-radius:3.5vh;
+}
+.left_selector{
+    height:100vh;
+    color:#fff;
+    overflow:auto;  
+    float:left;
+    width:30vh;
+    background:url('img/left_shape.png');
+    background-size:100% 100%;
+    border-top-right-radius:50vh;
+    border-bottom-right-radius:50vh;
+}
+.left_selector::-webkit-scrollbar {
+  display: none;
+}
+        </style>
+    </head>
+    <body>
+        <div class = "fc">
+            <div class = "loader">
+                <?php include 'loading_h_idden.php'; ?>
+            </div>
+            <div class="dash fvw fvh flex">
+                <div class="left_selector" onscroll = "changewidth()">
+                     
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                    <div class = "oh ct"> oVERFLOW HIDDEN </div>
+                </div>
+                <div class="right_main flexy"></div>
+            </div>
+        </div>
+        
+    </body>
+</html>
